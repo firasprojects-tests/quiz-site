@@ -79,13 +79,13 @@ maxScoreSpan.textContent = quizQuestions.length;
 startButton.addEventListener('click', startQuiz);
 restartButton.addEventListener('click', restartQuiz);
 
-// functions
+// Functions
 
 function startQuiz() {
     // reset vars
     currentQuestionIndex = 0;
     score = 0;
-    scoreSpan.textContent = 0;
+    scoreSpan.textContent = score;
 
     startScreen.classList.remove('active');
     quizScreen.classList.add('active');
