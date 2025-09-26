@@ -68,6 +68,7 @@ const quizQuestions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
+// to avoid the double click on answer button that can duplicate the score
 let answerDisabled = false;
 
 totalQuestionsSpan.textContent = quizQuestions.length;
@@ -78,6 +79,7 @@ maxScoreSpan.textContent = quizQuestions.length;
 startButton.addEventListener('click', startQuiz);
 restartButton.addEventListener('click', restartQuiz);
 
+// functions
 
 function startQuiz() {
     // reset vars
